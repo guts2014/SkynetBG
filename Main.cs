@@ -36,34 +36,38 @@ namespace Game
                    
         }   
         public void EndDay() {
+            time.Stop();
             economy.SimEconomy();
             CollectCalls();
             c.clients.ForEach(item => item.EndDay());
-            c.workers.ForEach(item => item.EndDay());
+            int i = c.workers.Count-1;
+            while (i > 0) {
+                c.workers[i].EndDay();
+                i-=1;
+            }           
             c.EndDay();
             AttractNewCustomers();
             eventpool.ForEach(item => item.UpdateTime(time.Now));
             Update();
+            time.Start();
+            
         }
         public void CollectCalls() {
             List<Customer> free = new List<Customer>();
             free=c.clients.Take(c.clients.Count).ToList();
             if (free.Count == 0)return;
             int callers = Convert.ToInt32(0.6 * free.Count);
-            while (callers > 0 && free.Count>0) {
-                Random ran = new Random();
-                Customer cl = free[ran.Next(free.Count)];
-                if (!cl.called) {
-                    cl.GiveCall();
-                    free.Remove(cl);
-                    callers--;
-                }
+            while (callers > 0 && free.Count>0) {                
+                Customer cl = free[ran.Next(free.Count)];                
+                cl.GiveCall();
+                free.Remove(cl);
+                callers-=1;                
             }
         
         }
         public void AttractNewCustomers() { 
             int count=Convert.ToInt32(c.clients.Count*c.Reputation*economy.GDP_Growth);
-            for (int i = 0; i < count; i++) c.clients.Add(new Customer(this));
+            for (int i = 0; i < count; i++) c.clients.Add(new Customer(this) {c=c});
         } 
         
         public void SimulateEvent(Event e) {

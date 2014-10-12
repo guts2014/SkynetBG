@@ -45,7 +45,7 @@ namespace Game.Buisness
             }
             set
             {
-                sph = value;
+                sph = System.Math.Min(value,1);
                 if (sph < 0.4) IncreaseWages();
             }
         }
@@ -107,7 +107,6 @@ namespace Game.Buisness
         public double GDP_Growth {
             get
             {
-                gdpG = (pg + inf)*slope;
                 return gdpG;
             }
             set
@@ -131,14 +130,16 @@ namespace Game.Buisness
             Demand += demand * PopulationGrowth;//Natural growth of the demand based on increase in the population         
             int c = Demand.CompareTo(Supply);
             double newp = 0f;
+            
             switch(c){
                 case 1:
                     newp = (0.2 * (min / capacity)) + min;//new price old price+20%
                     double b = price - (slope * capacity);
                     Demand += (slope * capacity) - b;
                     capacity += capacity * GDP_Growth;
-                    Inflation = (newp-price)/price;
+                    inf = (newp-price)/price;
                     price = newp;
+                    gdpG = (pg + inf) ;
                     break;
                 case 0:
 
@@ -153,12 +154,12 @@ namespace Game.Buisness
             StandardWageGrowth();        
         }
         private void IncreaseWages() {
-            MinWage += (min * Inflation);
-            MaxWage += (max * Inflation);           
+            min += (min * Inflation);
+            max += (max * Inflation);           
         }
         private void StandardWageGrowth() {
-            MinWage += (min * GDP_Growth);
-            MaxWage += (min * GDP_Growth);
+            min += (min * GDP_Growth);
+            max += (min * GDP_Growth);
         }
     }
 }

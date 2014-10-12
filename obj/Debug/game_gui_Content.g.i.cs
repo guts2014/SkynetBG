@@ -8,6 +8,8 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-[assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("1413042310_office-building.ico")]
+[assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("backward.png")]
+[assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("forward.png")]
+[assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("play.png")]
 
 

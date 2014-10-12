@@ -31,7 +31,7 @@ namespace Game.Buisness
         #region"properties"
         public double Satisfaction {
             get {
-                moral += (wage / game.economy.MaxWage)-stress;
+                moral += ((wage / game.economy.MaxWage)-stress)*0.0027;
                 return moral;
             }
         }
@@ -48,7 +48,7 @@ namespace Game.Buisness
         }
         public bool IsFree {
             get {               
-                return 480d < quee.Sum(item => Call.TimeCost(item.type)) ;
+                return 480d > quee.Sum(item => Call.TimeCost(item.type)) ;
             }
         }
         #endregion
@@ -61,7 +61,7 @@ namespace Game.Buisness
             age = g.ran.Next(21, 65);
             this.exp = g.ran.Next(age - 21);
             politness = g.ran.NextDouble();
-            this.moral = g.ran.NextDouble();            
+            this.moral = 1d;            
             sleeps = 0f;
             learningRate = g.ran.NextDouble();
             List<String> lnames = g.data.getDataFor(0);

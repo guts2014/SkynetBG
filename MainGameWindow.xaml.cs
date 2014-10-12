@@ -76,16 +76,13 @@ namespace game_gui
                 time.Content = game.time.ToString();
             }            
         }
-        private void UpdateUI() {
-            stack.Children.Clear();
-            for (int i = 0; i < game.c.workers.Count; i++)
-            {
-                stack.Children.Add(new EmployeeItem(game.c.workers[i]));
-            }
+        private void UpdateUI() {  
             if (!Dispatcher.CheckAccess())
             {
-                Dispatcher.Invoke(() => bal.Content = game.c.Balance);
-                Dispatcher.Invoke(() => cl.Content = game.c.clients.Count);
+                //Dispatcher.Invoke(()=> stack.Children.Clear());
+                //Dispatcher.Invoke(()=> for(int i = 0; i < game.c.workers.Count; i++)stack.Children.Add(new EmployeeItem(game.c.workers[i])));            
+                Dispatcher.Invoke(() => bal.Content = "Funds: "+game.c.Balance);
+                Dispatcher.Invoke(() => cl.Content = "Clients: "+game.c.clients.Count);
             }
             else
             {
@@ -98,6 +95,21 @@ namespace game_gui
         {
             Assigner a= new Assigner(game);           
             a.Show();
+        }
+
+        private void slow_MouseLeftButtonDown(object sender, MouseButtonEventArgs e)
+        {
+            game.time.Speed*=2;
+        }
+
+        private void play_MouseLeftButtonDown(object sender, MouseButtonEventArgs e)
+        {
+            game.time.Speed=(game.time.Speed>0)?0:1;
+        }
+
+        private void fast_MouseLeftButtonDown(object sender, MouseButtonEventArgs e)
+        {
+            game.time.Speed /=2;
         }
     }
 }

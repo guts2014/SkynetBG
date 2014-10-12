@@ -27,8 +27,8 @@ namespace Game.Buisness
         {
             get
             {
-                if (totalCalls == 0) return 1d;
-                return System.Math.Sqrt((goodCalls/totalCalls)*relation);
+                if (totalCalls == 0|goodCalls==0) return 1d;
+                return System.Math.Sqrt(System.Math.Abs((goodCalls/totalCalls)*relation));
             }
         }
         public bool IsTakenCareOf {
@@ -48,7 +48,7 @@ namespace Game.Buisness
         }
         public Customer(Main game) {                       
             patience = game.ran.NextDouble();
-            income = game.ran.Next(Convert.ToInt32(game.economy.MinWage),Convert.ToInt32(game.economy.MaxWage))/1d;
+            income = game.ran.Next((int)game.economy.MinWage,(int)game.economy.MaxWage)/1d;
             par = game;
             pref = (Enums.Media)game.ran.Next(4);
             handler = null;
@@ -58,6 +58,7 @@ namespace Game.Buisness
             goodCalls = 0;
             totalCalls = 0;
             called = false;
+            relation = 0.001;
         }
         public void AssignTo(Employee w) {
             if (handler == null)

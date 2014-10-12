@@ -25,7 +25,7 @@ namespace game_gui
            InitializeComponent();
            sumloan.Text = g.c.loans[0].ToString();
            income.Content = g.c.Income.ToString();
-           expense.Content = g.c.Expensess.ToString();
+           expense.Content = '-'+g.c.Expensess.ToString();
            total.Content = g.c.Balance.ToString();
            inflation.Content = g.economy.Inflation.ToString();
            game=g;

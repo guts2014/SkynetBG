@@ -23,12 +23,8 @@ namespace Game.Buisness
         private List<double> otherExp = new List<double>();
         #region"properties"
         public double Reputation {
-            get {
-                double cls = 0f;
-                double ws = 0f;
-                for (int i = 0; i < clients.Count; i++) cls += clients[i].Satisfaction;
-                for (int i = 0; i < workers.Count; i++) ws += workers[i].Satisfaction;
-                    return repBase * (cls/clients.Count)*(ws/workers.Count);
+            get {         
+                return repBase + (clients.Sum(item=>item.Satisfaction)/clients.Count)*(workers.Sum(item=>item.Satisfaction)/workers.Count);
             }
            set {
                repBase = value;
@@ -38,18 +34,18 @@ namespace Game.Buisness
            get {
                double wages = workers.Sum(item => item.wage)+otherExp.Sum();
                otherExp.Clear();
-               return wages;
+               return System.Math.Round(wages,2);
            }       
        }
        public double Income {
            get {
                if (penalty > 0d) return 0f;               
-               return clients.Sum(item=>item.Payment)*Math.Sqrt(techCo*comQuality);
+               return System.Math.Round(clients.Sum(item=>item.Payment)*Math.Sqrt(techCo*comQuality),2);
            }       
        }
        public double Balance{
            get {
-               return balance;
+               return System.Math.Round(balance,2);
            }
            set {
                balance=value;

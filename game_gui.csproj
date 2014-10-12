@@ -221,6 +221,11 @@
   <ItemGroup>
     <Resource Include="1413042310_office-building.ico" />
   </ItemGroup>
+  <ItemGroup>
+    <Resource Include="backward.png" />
+    <Resource Include="forward.png" />
+    <Resource Include="Play.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.

@@ -31,7 +31,7 @@ namespace game_gui
             this.game = game;
             ObservableCollection<string> clients = new ObservableCollection<string>();
             ObservableCollection<string> employees = new ObservableCollection<string>();
-            c=game.c.clients.Take(game.c.UpForGrabs().Count).ToList();
+            c=game.c.UpForGrabs().Take(game.c.UpForGrabs().Count).ToList();
             em = game.c.workers.Take(game.c.workers.Count).ToList();
             c.Sort();
             for (int i = 0; i < c.Count; i++) {
@@ -47,7 +47,8 @@ namespace game_gui
 
         private void asg_Click(object sender, RoutedEventArgs e)
         {
-            c[customers.SelectedIndex].AssignTo(em[employee.SelectedIndex]);
+            this.game.c.clients.Find(item=>item==c[customers.SelectedIndex]).AssignTo(em[employee.SelectedIndex]);
+            this.Close();
         }
 
         private void customers_SelectionChanged(object sender, SelectionChangedEventArgs e)

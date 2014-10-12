@@ -10,8 +10,10 @@ namespace Game.Utils
     public class Clock
     {
         private Timer t;
-        private int cycle=60;
+        private int cycle=1380;
+        private double speed;
         private int year;
+        private Main sys;
         public int Now {
             get {
               return cycle;
@@ -39,9 +41,31 @@ namespace Game.Utils
                 return cycle % 60;
             }
         }
-        private Main sys;
-        public Clock(Main c,double speed=2d) {
-            t = new Timer(speed*1000);
+        public double Speed {
+            get {
+                return speed;
+            }
+            set {
+                this.speed =System.Math.Max(value,0);
+                if (speed == 0) {
+                    Stop();
+                }
+                else if (speed == 1)
+                {
+                    t.Interval = 100;
+                    Start();
+                }
+                else {
+                    t.Interval = speed*100;                    
+                }
+           
+            }
+        }
+        
+        
+        public Clock(Main c,double speed=1d) {
+            this.speed = speed;
+            t = new Timer(speed*100);
             t.Elapsed += this.OnTimedEvent;  
             this.sys = c;
            // t.Enabled = true;
@@ -51,19 +75,19 @@ namespace Game.Utils
         }
         public void Stop() {
             t.Stop(); 
-        }
+        }   
         private void OnTimedEvent(Object source, ElapsedEventArgs e)
         {
             cycle = System.Math.Min(cycle+1, 525948);
             if (cycle % 525948 == 0) { cycle = 0; year++; }
-            if (Hours == 0) { 
-                Stop();
-                DayEnded(); 
+            if (Hours == 0) {                
+                DayEnded();
+                cycle += 60;
             }
             Tick();
         }
         public override string ToString() {
-            return Year + " y:" + Day + " d:" + Hours + " h:" + Mins + " m";
+            return Year + " y: " + Day + " d: " + Hours + " h: " + Mins + " m x "+(1/speed);
         }
 
         public event TickHandler Tick;      
