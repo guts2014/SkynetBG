@@ -1,0 +1,75 @@
+c:\users\andrey\documents\visual studio 2012\Projects\game_gui\game_gui\bin\Debug\game_gui.exe.config
+c:\users\andrey\documents\visual studio 2012\Projects\game_gui\game_gui\bin\Debug\game_gui.exe
+c:\users\andrey\documents\visual studio 2012\Projects\game_gui\game_gui\bin\Debug\game_gui.pdb
+c:\users\andrey\documents\visual studio 2012\Projects\game_gui\game_gui\obj\Debug\game_gui.csprojResolveAssemblyReference.cache
+c:\users\andrey\documents\visual studio 2012\Projects\game_gui\game_gui\obj\Debug\MainWindow.baml
+c:\users\andrey\documents\visual studio 2012\Projects\game_gui\game_gui\obj\Debug\MainWindow.g.cs
+c:\users\andrey\documents\visual studio 2012\Projects\game_gui\game_gui\obj\Debug\App.g.cs
+c:\users\andrey\documents\visual studio 2012\Projects\game_gui\game_gui\obj\Debug\game_gui_MarkupCompile.cache
+c:\users\andrey\documents\visual studio 2012\Projects\game_gui\game_gui\obj\Debug\game_gui.g.resources
+c:\users\andrey\documents\visual studio 2012\Projects\game_gui\game_gui\obj\Debug\game_gui.Properties.Resources.resources
+c:\users\andrey\documents\visual studio 2012\Projects\game_gui\game_gui\obj\Debug\game_gui.csproj.GenerateResource.Cache
+c:\users\andrey\documents\visual studio 2012\Projects\game_gui\game_gui\obj\Debug\game_gui.exe
+c:\users\andrey\documents\visual studio 2012\Projects\game_gui\game_gui\obj\Debug\game_gui.pdb
+c:\users\andrey\documents\visual studio 2012\Projects\game_gui\game_gui\obj\Debug\Client.baml
+c:\users\andrey\documents\visual studio 2012\Projects\game_gui\game_gui\obj\Debug\Client.g.cs
+c:\users\andrey\documents\visual studio 2012\Projects\game_gui\game_gui\obj\Debug\employee.baml
+c:\users\andrey\documents\visual studio 2012\Projects\game_gui\game_gui\obj\Debug\MainGameWindow.baml
+c:\users\andrey\documents\visual studio 2012\Projects\game_gui\game_gui\obj\Debug\Bank.baml
+c:\users\andrey\documents\visual studio 2012\Projects\game_gui\game_gui\obj\Debug\employee.g.cs
+c:\users\andrey\documents\visual studio 2012\Projects\game_gui\game_gui\obj\Debug\MainGameWindow.g.cs
+c:\users\andrey\documents\visual studio 2012\Projects\game_gui\game_gui\obj\Debug\Bank.g.cs
+D:\hackathon\Game gui\game_gui\game_gui\bin\Debug\game_gui.exe.config
+D:\hackathon\Game gui\game_gui\game_gui\obj\Debug\game_gui.exe
+D:\hackathon\Game gui\game_gui\game_gui\obj\Debug\game_gui.pdb
+D:\hackathon\Game gui\game_gui\game_gui\obj\Debug\game_gui.csprojResolveAssemblyReference.cache
+D:\hackathon\Game gui\game_gui\game_gui\obj\Debug\Client.baml
+D:\hackathon\Game gui\game_gui\game_gui\obj\Debug\employee.baml
+D:\hackathon\Game gui\game_gui\game_gui\obj\Debug\MainGameWindow.baml
+D:\hackathon\Game gui\game_gui\game_gui\obj\Debug\MainWindow.baml
+D:\hackathon\Game gui\game_gui\game_gui\obj\Debug\Client.g.cs
+D:\hackathon\Game gui\game_gui\game_gui\obj\Debug\employee.g.cs
+D:\hackathon\Game gui\game_gui\game_gui\obj\Debug\MainGameWindow.g.cs
+D:\hackathon\Game gui\game_gui\game_gui\obj\Debug\MainWindow.g.cs
+D:\hackathon\Game gui\game_gui\game_gui\obj\Debug\App.g.cs
+D:\hackathon\Game gui\game_gui\game_gui\obj\Debug\game_gui_MarkupCompile.cache
+D:\hackathon\Game gui\game_gui\game_gui\bin\Debug\game_gui.exe
+D:\hackathon\Game gui\game_gui\game_gui\bin\Debug\game_gui.pdb
+D:\hackathon\Game gui\game_gui\game_gui\obj\Debug\Bank.baml
+D:\hackathon\Game gui\game_gui\game_gui\obj\Debug\Bank.g.cs
+D:\hackathon\Game gui\game_gui\game_gui\obj\Debug\game_gui.g.resources
+D:\hackathon\Game gui\game_gui\game_gui\obj\Debug\game_gui.Properties.Resources.resources
+D:\hackathon\Game gui\game_gui\game_gui\obj\Debug\game_gui.csproj.GenerateResource.Cache
+D:\Dev\Projects\Game gui\game_gui\game_gui\bin\Debug\game_gui.exe.config
+D:\Dev\Projects\Game gui\game_gui\game_gui\obj\Debug\game_gui.exe
+D:\Dev\Projects\Game gui\game_gui\game_gui\obj\Debug\game_gui.pdb
+D:\Dev\Projects\Game gui\game_gui\game_gui\bin\Debug\game_gui.exe
+D:\Dev\Projects\Game gui\game_gui\game_gui\bin\Debug\game_gui.pdb
+D:\Dev\Projects\Game gui\game_gui\game_gui\obj\Debug\game_gui.csprojResolveAssemblyReference.cache
+D:\Dev\Projects\Game gui\game_gui\game_gui\obj\Debug\Client.baml
+D:\Dev\Projects\Game gui\game_gui\game_gui\obj\Debug\employee.baml
+D:\Dev\Projects\Game gui\game_gui\game_gui\obj\Debug\MainGameWindow.baml
+D:\Dev\Projects\Game gui\game_gui\game_gui\obj\Debug\MainWindow.baml
+D:\Dev\Projects\Game gui\game_gui\game_gui\obj\Debug\Bank.baml
+D:\Dev\Projects\Game gui\game_gui\game_gui\obj\Debug\Client.g.cs
+D:\Dev\Projects\Game gui\game_gui\game_gui\obj\Debug\employee.g.cs
+D:\Dev\Projects\Game gui\game_gui\game_gui\obj\Debug\MainGameWindow.g.cs
+D:\Dev\Projects\Game gui\game_gui\game_gui\obj\Debug\MainWindow.g.cs
+D:\Dev\Projects\Game gui\game_gui\game_gui\obj\Debug\Bank.g.cs
+D:\Dev\Projects\Game gui\game_gui\game_gui\obj\Debug\App.g.cs
+D:\Dev\Projects\Game gui\game_gui\game_gui\obj\Debug\game_gui_MarkupCompile.cache
+D:\Dev\Projects\Game gui\game_gui\game_gui\obj\Debug\game_gui.g.resources
+D:\Dev\Projects\Game gui\game_gui\game_gui\obj\Debug\game_gui.Properties.Resources.resources
+D:\Dev\Projects\Game gui\game_gui\game_gui\obj\Debug\game_gui.csproj.GenerateResource.Cache
+D:\Dev\Projects\Game gui\game_gui\game_gui\obj\Debug\HireList.baml
+D:\Dev\Projects\Game gui\game_gui\game_gui\obj\Debug\ListItem.baml
+D:\Dev\Projects\Game gui\game_gui\game_gui\obj\Debug\HireList.g.cs
+D:\Dev\Projects\Game gui\game_gui\game_gui\obj\Debug\ListItem.g.cs
+D:\Dev\Projects\Game gui\game_gui\game_gui\obj\Debug\create.baml
+D:\Dev\Projects\Game gui\game_gui\game_gui\obj\Debug\create.g.cs
+D:\Dev\Projects\Game gui\game_gui\game_gui\obj\Debug\MsgBox.baml
+D:\Dev\Projects\Game gui\game_gui\game_gui\obj\Debug\MsgBox.g.cs
+D:\Dev\Projects\Game gui\game_gui\game_gui\obj\Debug\EmployeeItem.baml
+D:\Dev\Projects\Game gui\game_gui\game_gui\obj\Debug\EmployeeItem.g.cs
+D:\Dev\Projects\Game gui\game_gui\game_gui\obj\Debug\Assigner.baml
+D:\Dev\Projects\Game gui\game_gui\game_gui\obj\Debug\Assigner.g.cs

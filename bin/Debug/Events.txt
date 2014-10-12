@@ -1,0 +1,13 @@
+Police came to inspect for drugs/7/1/0.092
+The office was attacked by crocodiles/7/2/0.01
+Unknown employee cooked fish in the microwave/7/0.1/0.03
+Faulty computer: (cost)/5/0.2/0.041
+Telephone lines are down/6/-1/0.035
+An employee called that he is sick/0/0.15/0.038
+An employee called that he is sick/1/0.1/0.036
+A customer complained about an employee!/2/-0.1/0.043
+An employee demands bigger wage/3/0.017/0.03
+World cup is on. But with it comes 0.4 of inflation too/4/0.4/0.001
+An employee is suing you for bad treatment/7/3/0.009
+
+

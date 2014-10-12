@@ -1,0 +1,33 @@
+﻿<Window x:Class="game_gui.Bank"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="Window1" Height="600" Width="600" ResizeMode="NoResize">
+    <Grid>
+        <Grid.Background>
+            <ImageBrush ImageSource="bank.png"/>
+        </Grid.Background>
+        <Label FontSize="40" Margin="1,0,393.6,407.4" RenderTransformOrigin="0.5,0.5">
+            <Label.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform/>
+                    <SkewTransform/>
+                    <RotateTransform Angle="-0.016"/>
+                    <TranslateTransform/>
+                </TransformGroup>
+            </Label.RenderTransform> Bank</Label>
+        <Label FontSize="22"  Margin="20,423,328,10">Enter loan size:</Label>
+        <TextBox Name="sumloan" Margin="229,423,148,98" FontSize="22"></TextBox>
+        <Button Width="90" Height="40" Margin="252,506,252,25" Name="getloan" Click="getloan_Click" FontSize="18">Get Loan</Button>
+        <Button Width="90" Height="40" Margin="51,506,453,25" Name="payloan" Content="Pay Loan" Click="payloan_Click" FontSize="18"/>
+        <Button Width="90" Height="40" Margin="446,506,58,25" Name="bankclose" Content="Close" Click="bankclose_Click" FontSize="18"/>
+        <Label FontSize="18" Name="income" Content="empty" Margin="134,185,293,230"/>
+        <Label FontSize="20" Name="income1" Content="Incomes:" Margin="24,183,377,232" RenderTransformOrigin="0.498,0.171"/>
+        <Label FontSize="20" Name="expense" Content="empty" Margin="134,243,293,183"/>
+        <Label FontSize="20" Name="expense1" Content="Expenses:" Margin="24,243,377,175"/>
+        <Label FontSize="20" Name="inflation" Content="empty" Margin="134,292,293,131"/>
+        <Label FontSize="20" Name="inflation1" Content="Inflation:" Margin="24,292,377,127"/>
+        <Label FontSize="23" Name="total" Content="empty" Margin="134,339,280,85"/>
+        <Label FontSize="23" Name="total1" Content="Revenue:" Margin="20,339,365,85" />
+        
+    </Grid>
+</Window>

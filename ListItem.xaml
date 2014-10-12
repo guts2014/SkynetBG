@@ -1,0 +1,29 @@
+﻿<UserControl x:Class="game_gui.ListItem"            
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             mc:Ignorable="d" Height="90" Width="475">
+    <UserControl.Background>
+        <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+            <GradientStop Color="#FF151515"/>
+            <GradientStop Color="#FF363434" Offset="1"/>
+        </LinearGradientBrush>
+    </UserControl.Background>
+    <Border x:Name="bd" BorderBrush="#FFBACB0F" BorderThickness="2" HorizontalAlignment="Left" Height="91" VerticalAlignment="Top" Width="475" CornerRadius="10">
+        <Grid x:Name="gd">
+            <Image x:Name="pic" HorizontalAlignment="Left" Height="42" VerticalAlignment="Top" Width="47" Source="people.png" Margin="10,5,0,0" Stretch="Fill"/>
+            <Label Content="Name:" HorizontalAlignment="Left" Margin="62,0,0,0" VerticalAlignment="Top" Foreground="#FFBACB0F"/>
+            <TextBlock x:Name="name" HorizontalAlignment="Left" Margin="125,5,0,0" TextWrapping="Wrap" Text="TextBlock" VerticalAlignment="Top" Width="124" Height="21" Foreground="#FFBACB0F"/>
+            <Label Content="Gender:" HorizontalAlignment="Left" Margin="62,26,0,0" VerticalAlignment="Top" Foreground="#FFBACB0F"/>
+            <Label Content="Experiance:" HorizontalAlignment="Left" Margin="254,0,0,0" VerticalAlignment="Top" Foreground="#FFBACB0F"/>
+            <Label Content="Best Skill:" HorizontalAlignment="Left" Margin="254,24,0,0" VerticalAlignment="Top" Foreground="#FFBACB0F"/>
+            <TextBlock x:Name="exp" HorizontalAlignment="Left" Margin="323,5,0,0" TextWrapping="Wrap" Text="TextBlock" VerticalAlignment="Top" Width="138" Height="21" Foreground="#FFBACB0F"/>
+            <TextBlock x:Name="gen" HorizontalAlignment="Left" Margin="120,30,0,0" TextWrapping="Wrap" Text="TextBlock" VerticalAlignment="Top" Width="129" Height="21" Foreground="#FFBACB0F"/>
+            <TextBlock x:Name="skill" HorizontalAlignment="Left" Margin="313,28,0,0" TextWrapping="Wrap" Text="TextBlock" VerticalAlignment="Top" Width="148" Height="21" Foreground="#FFBACB0F"/>
+            <Label Content="Age:" HorizontalAlignment="Left" Margin="62,51,0,0" VerticalAlignment="Top" Foreground="#FFBACB0F"/>
+            <TextBlock x:Name="age" HorizontalAlignment="Left" Margin="120,56,0,0" TextWrapping="Wrap" Text="TextBlock" VerticalAlignment="Top" Width="129" Height="21" Foreground="#FFBACB0F"/>
+            <Button x:Name="hire" Content="Hire" HorizontalAlignment="Left" Margin="266,57,0,0" VerticalAlignment="Top" Width="86" Click="hire_Click"/>
+        </Grid>
+    </Border>
+</UserControl>

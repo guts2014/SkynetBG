@@ -1,0 +1,23 @@
+﻿<Window x:Class="game_gui.Assigner"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="Assigner" Height="239.044" Width="470.916" ResizeMode="NoResize">
+    <Grid HorizontalAlignment="Left" Height="216" VerticalAlignment="Top" Width="471" Margin="0,0,-6,-6">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="82*"/>
+            <ColumnDefinition Width="55*"/>
+        </Grid.ColumnDefinitions>
+        <Grid.Background>
+            <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                <GradientStop Color="#FF110F0F" Offset="0.007"/>
+                <GradientStop Color="#FF292525" Offset="1"/>
+            </LinearGradientBrush>
+        </Grid.Background>
+        <ComboBox x:Name="customers" HorizontalAlignment="Left" Margin="38,73,0,0" VerticalAlignment="Top" Width="174" Height="29" SelectionChanged="customers_SelectionChanged"/>
+        <ComboBox x:Name="employee" HorizontalAlignment="Left" Margin="239,73,0,0" VerticalAlignment="Top" Width="196" Height="29" Grid.ColumnSpan="2"/>
+        <Button x:Name="asg" Content="Assign" HorizontalAlignment="Left" Margin="38,133,0,0" VerticalAlignment="Top" Width="131" Height="39" FontSize="18" Click="asg_Click"/>
+        <Button x:Name="cancel" Content="Cancel" HorizontalAlignment="Left" Margin="239,133,0,0" VerticalAlignment="Top" Width="131" Height="39" FontSize="18" Click="cancel_Click" Grid.ColumnSpan="2"/>
+        <Label Content="Customer:" HorizontalAlignment="Left" Margin="40,21,0,0" VerticalAlignment="Top" Width="129" FontSize="16" Background="#00000000" Foreground="#FFBDBD1F" Height="31"/>
+        <Label Content="Employee:" HorizontalAlignment="Left" Margin="239,21,0,0" VerticalAlignment="Top" Width="129" FontSize="16" Background="#00000000" Foreground="#FFBDBD1F" Height="31" Grid.ColumnSpan="2"/>
+    </Grid>
+</Window>
